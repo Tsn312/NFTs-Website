@@ -1,0 +1,1480 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  width: 100%;
+  background: linear-gradient(90deg ,rgb(0, 0, 0), rgb(85, 0, 61)) ;
+  
+}
+.navbar{
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*background-color: rgb(11, 11, 11);*/
+  height:80px;
+}
+.navbar ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  color:#4f0042;
+}
+.logo{
+  height:50px;
+  width:70px;
+  margin-left: 20px;
+}
+.logo:hover{
+  height:55px;
+  width:70px;
+  margin-left: 20px;
+  transition-duration: 1s;
+  
+}
+.searchbar{
+  width:600px;
+  border-style:none;
+  border-radius: 7px;
+  height: 43px;
+  background-color: rgba(93, 21, 91, 0.391);
+  outline: none;
+  color:#ff74ef;
+  font-size: 20px;
+}
+input {
+  caret-color: rgb(255, 137, 239);
+ }
+ 
+.searchbar:active{
+  width:600px;
+  border-style:none;
+  border-radius: 7px;
+  height: 43px;
+  background-color: rgba(145, 37, 142, 0.391);
+}
+.searchbar::placeholder{
+  position:absolute;
+  left: 30px;
+  font-family: Arial;
+  color:#ffffff;
+
+}
+.navbar ul li{
+  margin-left:60px;
+}
+.login button{
+  width:110px;
+  height:43px;
+  margin-right: 10px;
+  border-style:solid ;
+  border-color: rgb(167, 0, 153);
+  border-radius: 7px;
+  background-color: rgb(85, 0, 61); 
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 600;
+  color:#fff;
+}
+.login button:hover{
+  width:110px;
+  height:43px;
+  margin-right: 10px;
+  border-style:none ;
+  border-radius: 7px;
+  background-color: rgb(167, 0, 153);
+  font-family: Arial;
+  color:rgb(85, 0, 61);
+  transition: .5s;
+}
+.login button:active{
+  width:110px;
+  height:43px;
+  margin-right: 10px;
+  border-style:none ;
+  border-radius: 7px;
+  background-color: rgb(72, 0, 66);
+  font-family: Arial;
+  color:rgb(255, 255, 255);
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-family: Arial;
+  color:#fff;
+  
+}
+.navbar ul li a i {
+  font-size: 25px;
+}
+
+.navbar ul li a:hover{
+  text-decoration: none;
+  font-family: Arial;
+  color:rgb(167, 0, 153);
+  transition: .5s;
+  
+}
+
+
+
+
+
+/* navbar ends */
+
+
+
+
+
+.container{
+  height:100vh;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+.box1{
+  height:80%;
+  width:60%;
+  
+}
+@keyframes index {
+  from{
+    transform: translateX(-1000px);
+  }
+  to{
+    transform:translateX(0px)
+  }
+}
+.box1 h1{
+  font-family: arial;
+  font-size: 80px;
+  margin-top:100px;
+  margin-left: 20px;
+  background-clip: text;
+  background-image: linear-gradient(to right, #ff0062, #ac00c6,rgb(44, 0, 97));
+  color:transparent;
+
+  animation: index 1.2s ease-in 0.2s 1 normal ;
+}
+.itm1{
+  position: absolute;
+  height:300px;
+  width:300px;
+  left:380px;
+  top: 180px;
+  opacity: 0.3;
+}
+
+.itm2{
+  position: absolute;
+  height:300px;
+  width:300px;
+  top:40px;
+  left:0px;
+  opacity:0.1;
+}
+.itm3{
+  position: absolute;
+  height:400px;
+  width:400px;
+  opacity:0.2;
+  rotate: 45deg;
+  top: 350px
+}
+.itm4{
+  position: absolute;
+  height:400px;
+  width:400px;
+  opacity:0.2;
+  rotate: 45deg;
+  top: 400px;
+  left:700px;
+}
+@keyframes items {
+  from{
+    transform: rotate(360deg);
+  }
+  to{
+    transform: rotate(0deg);
+  }
+}
+@keyframes items2 {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+@keyframes items3 {
+  from{
+    transform: rotate(360deg);
+  }
+  to{
+    transform: rotate(0deg);
+  }
+}
+.itm1{
+animation-name: items;
+animation-duration: 100s;
+animation-timing-function: linear;
+animation-delay: 0s;
+animation-direction: normal ;
+animation-iteration-count: infinite;
+animation-fill-mode: ;
+transform-origin: ;
+
+}
+.itm2{
+animation-name: items2;
+animation-duration: 200s;
+animation-timing-function: linear;
+animation-delay: 0s;
+animation-direction: normal ;
+animation-iteration-count: infinite;
+animation-fill-mode: ;
+transform-origin: ;
+
+}
+.itm3{
+animation-name: items3;
+animation-duration: 200s;
+animation-timing-function: linear;
+animation-delay: 0s;
+animation-direction: normal ;
+animation-iteration-count: infinite;
+animation-fill-mode: ;
+transform-origin: ;
+
+}
+.itm4{
+animation-name: items2;
+animation-duration: 200s;
+animation-timing-function: linear;
+animation-delay: 0s;
+animation-direction: normal ;
+animation-iteration-count: infinite;
+animation-fill-mode: ;
+transform-origin: ;
+}
+
+
+
+
+
+@keyframes pic1 {
+  from{
+    transform: translateY(-230px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+@keyframes pic2 {
+  from{
+    transform: translateY(200px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+@keyframes pic3_4 {
+  from{
+    transform: translateX(60px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+
+.pic1{
+  position: absolute;
+  top:120px;
+  right:320px;
+  height:260px;
+  width:260px;
+  background-image: url(homepic1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+
+  border-radius: 15px;
+
+
+  animation-name: pic1 ;
+  animation-duration: 2s;
+  animation-timing-function:  ;
+  animation-delay: 0s;
+  animation-direction: normal ;
+  animation-iteration-count: 1;
+}
+.pic1:hover{
+  position: absolute;
+  top:120px;
+  right:317px;
+  height:263px;
+  width:263px;
+  background-image: url(homepic1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+
+  border-radius: 15px;
+
+
+  animation-name: pic1 ;
+  animation-duration: 2s;
+  animation-timing-function:  ;
+  animation-delay: 0s;
+  animation-direction: normal ;
+  animation-iteration-count: 1;
+}
+.pic2{
+  position: absolute;
+  top:390px;
+  right:320px;
+  height:200px;
+  width:260px;
+  /*background-color: lightcoral;*/
+
+  background-image: url(homepic2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 15px;
+
+  animation-name: pic2 ;
+  animation-duration: 2s;
+  animation-timing-function:  ;
+  animation-delay: 0s;
+  animation-direction: normal ;
+  animation-iteration-count: 1;
+}
+.pic2:hover{
+  position: absolute;
+  top:387px;
+  right:317px;
+  height:203px;
+  width:263px;
+  background-color: lightcoral;
+
+  background-image: url(homepic2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 15px;
+
+  animation-name: pic2 ;
+  animation-duration: 2s;
+  animation-timing-function:  ;
+  animation-delay: 0s;
+  animation-direction: normal ;
+  animation-iteration-count: 1;
+}
+.pic3{
+  position: absolute;
+  top:120px;
+  right:60px;
+  height:300px;
+  width:250px;
+  /*background-color: lightgreen;*/
+
+  background-image: url(homepic3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 15px;
+
+  animation-name: pic3_4 ;
+  animation-duration: 2s;
+  animation-timing-function:  ;
+  animation-delay: 0s;
+  animation-direction: normal ;
+  animation-iteration-count: 1;
+}
+.pic3:hover{
+  position: absolute;
+  top:117px;
+  right:57px;
+  height:303px;
+  width:253px;
+  background-color: lightgreen;
+
+  background-image: url(homepic3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 15px;
+
+  animation-name: pic3_4 ;
+  animation-duration: 2s;
+  animation-timing-function:  ;
+  animation-delay: 0s;
+  animation-direction: normal ;
+  animation-iteration-count: 1;
+}
+.pic4{
+  position: absolute;
+  top:430px;
+  right:60px;
+  height:160px;
+  width:250px;
+ /* background-color: lightpink; */
+
+  background-image: url(homepic4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 15px;
+
+  animation-name: pic3_4 ;
+  animation-duration: 2s;
+  animation-timing-function:  ;
+  animation-delay: 0s;
+  animation-direction: normal ;
+  animation-iteration-count: 1;
+}
+.pic4:hover{
+  position: absolute;
+  top:427px;
+  right:57px;
+  height:163px;
+  width:253px;
+  background-color: lightpink;
+
+  background-image: url(homepic4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 15px;
+
+  animation-name: pic3_4 ;
+  animation-duration: 2s;
+  animation-timing-function:  ;
+  animation-delay: 0s;
+  animation-direction: normal ;
+  animation-iteration-count: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/*scroll down page*/
+
+
+
+
+
+
+
+
+
+
+
+@keyframes scrollDown {
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(-10px);
+  }
+}
+.container2{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box2{
+  height:500px;
+  width:310px;
+  background-color:rgb(54, 0, 37);
+}
+.box2:hover{
+  height:500px;
+  width:310px;
+  background-color: rgb(89, 0, 61);
+
+
+}
+.box3{
+  height:500px;
+  width:310px;
+  background-color:rgb(54, 0, 37);
+}
+.box3:hover{
+  height:500px;
+  width:310px;
+  background-color: rgb(89, 0, 61);
+
+}
+.box4{
+  height:500px;
+  width:310px;
+  background-color:rgb(54, 0, 37);
+}
+.box4:hover{
+  height:500px;
+  width:310px;
+  background-color: rgb(89, 0, 61);
+
+
+}
+.box5{
+  height:500px;
+  width:310px;
+  background-color:rgb(54, 0, 37);
+}
+.box5:hover{
+  height:500px;
+  width:310px;
+  background-color: rgb(89, 0, 61);
+
+}
+
+.container3{
+
+  background-color: #a3a3a3;
+}
+
+
+
+/*login page */
+
+
+
+.lgcontainer{
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+@keyframes loginSlide {
+  from{
+    transform: translateY(-300px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+.loginbox{
+  display: ;
+  margin-top: px;
+  width: 400px;
+  height:530px;
+  margin-right: 50px;
+  justify-content: ;
+  border-style: solid;
+  border-color: #fff;
+  border-width: .1px;
+  border-radius: 4px;
+  background: linear-gradient(45deg , rgb(41, 0, 32) , rgb(178, 0, 134));
+  
+
+   
+
+  animation-name:  loginSlide;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s ;
+  animation-direction: normal ;
+  animation-iteration-count: 1 ;
+  animation-fill-mode: ;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+ height:20%;
+}
+.inputdiv{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  height:40%;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:30%;
+  
+}
+.text h1{
+  font-family: arial;
+  font-size: 55px;
+  font-weight: 800;
+  background-clip: text;
+  background-image: linear-gradient(to right, #921099, #ffffff,#cb14b5);
+  color:transparent;
+}
+.text h1:hover{
+  font-family: arial;
+  font-size: 49px;
+  transition: .5s;
+  
+}
+.inputdiv input{
+  width: 360px;
+  height:50px;
+  border-radius: 2px;
+  border-style: none;
+  background-color: #6e077381;
+  font-family: Arial;
+  color:#e9a4dd;
+  caret-color: #f2f1f1;
+  font-size: 16px;
+}
+.inputdiv input::placeholder{
+  text-align: center;
+  color:#d282c3;
+}
+
+.btn button{
+  width: 360px;
+  height: 70px;
+  margin-top: 50px;
+  background-color:#760062 ;
+  border-style: none;
+  border-radius: 4px;
+  font-family: Arial;
+  font-size:20px;
+  color: #ffffff;
+}
+.btn button:hover{
+  width: 360px;
+  height: 70px;
+  margin-top: 50px;
+  background-color: #a10086;
+  border-style: none;
+  border-radius: 4px;
+  font-family: Arial;
+  font-size:20px;
+  color: #f2f1f1;
+  transition: 1s;
+}
+.btn button:active{
+  width: 360px;
+  height: 70px;
+  margin-top: 50px;
+  background-color: #190015;
+  border-style: none;
+  border-radius: 4px;
+  font-family: Arial;
+  font-size:18px;
+  color: #f2f1f1;
+  transition: 0s;
+}
+.lgbox1{
+  
+  position: absolute;
+  height:550px;
+  width:700px;
+  left:0px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.lgbox1 h1{
+  font-family: Josefin Sans;
+  font-size: 80px;
+  color:#fff;
+
+}
+.box2{
+ 
+  background-image: url(bx1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+.box3{
+  background-image: url(bx2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+.box4{
+  background-image: url(bx3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+.box5{
+  background-image: url(bx4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+.homeText{
+  display: flex;
+  justify-content: center;
+}
+.homeText h1{
+  font-family: Arial;
+  font-size: 80px;
+  background-clip: text;
+  background-image: linear-gradient(to right, #ff0088, #ae00ff,rgb(99, 0, 53));
+  color:transparent;
+  
+}
+.container2{
+  margin-top: 90px;
+  
+}
+.container3{
+  background-color: black;
+  width:100%;
+  height:500px;
+  margin-top: 900px;
+}
+
+
+/*products card */
+
+
+
+.title1{
+  
+  margin-left: 10px;
+  height:192px;
+  width:  290px;
+  text-align: center;
+  display: inline-block;
+  
+}
+.title1 h1{
+  font-family: arial;
+  font-size: 20px;
+  color:#fff;
+  margin-top: 30px;
+}
+.title1 h2{
+  font-family: arial;
+  font-size: 20px;
+  color:#fff;
+}
+
+
+.cart_btn{
+  height: 60px;
+  width:290px;
+  margin-top:70px;
+  margin-right:20px;
+  border-radius: 6px;
+  border-style: none;
+  background-color: #921099;
+  color:#fff; 
+}
+.cart_btn:hover{
+  height: 60px;
+  width:290px;
+  margin-top:70px;
+  margin-right:20px;
+  border-radius: 6px;
+  border-style: none;
+  background-color: #e909f5;
+  color:#fff; 
+}
+.cart_btn:active{
+  height: 60px;
+  width:290px;
+  margin-top:70px;
+  margin-right:20px;
+  border-radius: 6px;
+  border-style: none;
+  background-color: #3d0040;
+  color:#fff; 
+}
+
+
+.product1{
+  margin-top: 10px;
+  margin-left:10px ;
+  height: 288px;
+  width:290px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 10px;
+  background-image: url(product1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  
+}
+
+.product2{
+  margin-top: 10px;
+  margin-left:10px ;
+  height: 288px;
+  width:290px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 10px;
+  background-image: url(product2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product3{
+  margin-top: 10px;
+  margin-left:10px ;
+  height: 288px;
+  width:290px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 10px;
+  background-image: url(nft1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product4{
+  margin-top: 10px;
+  margin-left:10px ;
+  height: 288px;
+  width:290px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 10px;
+  background-image: url(nft2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product5{
+  margin-top: 10px;
+  margin-left:10px ;
+  height: 288px;
+  width:290px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 10px;
+  background-image: url(nft3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product6{
+  margin-top: 10px;
+  margin-left:10px ;
+  height: 288px;
+  width:290px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 10px;
+  background-image: url(nft4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product7{
+  margin-top: 10px;
+  margin-left:10px ;
+  height: 288px;
+  width:290px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 10px;
+  background-image: url(nft5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product8{
+  margin-top: 10px;
+  margin-left:10px ;
+  height: 288px;
+  width:290px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 10px;
+  background-image: url(nft6.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product9{
+  margin-top: 10px;
+  margin-left:10px ;
+  height: 288px;
+  width:290px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 10px;
+  background-image: url(nft7.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product10{
+  margin-top: 10px;
+  margin-left:10px ;
+  height: 288px;
+  width:290px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 10px;
+  background-image: url(nft8.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product11{
+  margin-top: 10px;
+  margin-left:10px ;
+  height: 288px;
+  width:290px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 10px;
+  background-image: url(nft9.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product12{
+  margin-top: 10px;
+  margin-left:10px ;
+  height: 288px;
+  width:290px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 10px;
+  background-image: url(nft10.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product13{
+  margin-top: 10px;
+  margin-left:10px ;
+  height: 288px;
+  width:290px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 10px;
+  background-image: url(nft11.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product14{
+  margin-top: 10px;
+  margin-left:10px ;
+  height: 288px;
+  width:290px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 10px;
+  background-image: url(nft12.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product15{
+  margin-top: 10px;
+  margin-left:10px ;
+  height: 288px;
+  width:290px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 10px;
+  background-image: url(nft13.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product16{
+  margin-top: 10px;
+  margin-left:10px ;
+  height: 288px;
+  width:290px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 10px;
+  background-image: url(nft14.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product17{
+  margin-top: 10px;
+  margin-left:10px ;
+  height: 288px;
+  width:290px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 10px;
+  background-image: url(nft15.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product18{
+  margin-top: 10px;
+  margin-left:10px ;
+  height: 288px;
+  width:290px;
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 10px;
+  background-image: url(nft16.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/*Explore more Button*/
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height:200px;
+  width:100%;
+ 
+}
+
+
+.explore_more{
+  height:80px;
+  width:250px;
+  background-color: rgb(50, 3, 37);
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #a10086;
+  font-family: Arial;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.explore_more:hover{
+  height:80px;
+  width:250px;
+  background-color: #a10086;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #a10086;
+  font-family: Arial;
+  color: rgb(50, 3, 37);
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.explore_more:active{
+  height:80px;
+  width:250px;
+  background-color: #22001c;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #a10086;
+  font-family: Arial;
+  color: rgb(50, 3, 37);
+  font-weight: 600;
+  font-size: 20px;
+  
+}
+
+
+
+
+
+/*Profile page*/
+
+
+
+.pfcontainer{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(90deg ,rgb(0, 0, 0), rgb(85, 0, 61)) ;
+}
+
+.profile_pic{
+  position: absolute;
+  border-radius: 25px;
+  top:100px;
+  left:50px;
+  height:200px;
+  width:200px;
+  background-image: url(pfp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bio{
+  position: absolute;
+  top: 310px;
+  left: 50px;
+  height:300px;
+  width:300px;
+ 
+}
+.bio h2{
+  margin-top: 11px;
+  font-family: arial;
+  font-size: 25px;
+  color:#fff;
+}
+.bio p{
+  font-family: Arial;
+  font-size: 14px;
+  color:#a3a3a3;
+}
+
+.links a {
+  position: absolute;
+  font-size: 40px;
+}
+.a{
+  top:100px;
+}
+.b{
+  top:100px;
+ left:50px;
+}
+.c{
+  top:100px;
+  left:100px;
+}
+.d{
+  top:100px;
+  left:150px;
+}
+.id{
+  position: absolute;
+  top: 120px;
+  left:274px;
+  height:200px;
+  width:300px;
+  
+}
+.id h1{
+  font-family: arial;
+  font-size: 50px;
+  color:#fff;
+}
+.id p{
+  font-family:arial;
+  font-size: ;
+  color:#a3a3a3;
+}
+.social_link{
+  position: absolute;
+  top: 100px;
+  left:620px;
+  height:500px;
+  width:2px;
+  background-color: lightpink;
+}
+.profile_text_collections{
+  position: absolute;
+  top:100px;
+  left:700px;
+  height:100px;
+  width:500px;
+  
+}
+
+
+.profile_text_collections h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 70px;
+  color:#fff;
+
+}
+.collection1 {
+  position: absolute;
+  top:200px;
+  left:700px;
+  height:200px;
+  width:200px;
+  background-image:url(nft6.jpg);
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+.collection2{
+  position: absolute;
+  top:200px;
+  left:910px;
+  height:200px;
+  width:200px;
+  background-image:url(nft7.jpg);
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+.collection3 {
+  position: absolute;
+  top:200px;
+  left:1120px;
+  height:200px;
+  width:200px;
+  background-image:url(nft10.jpg);
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+.collection4 {
+  position: absolute;
+  top:410px;
+  left:700px;
+  height:200px;
+  width:200px;
+  background-image:url(nft14.jpg);
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+.collection5 {
+  position: absolute;
+  top:410px;
+  left:910px;
+  height:200px;
+  width:200px;
+  background-image:url(nft8.jpg);
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+.collection6 {
+  position: absolute;
+  top:410px;
+  left:1120px;
+  height:200px;
+  width:200px;
+  background-image:url(nft16.jpg);
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+
+
+
+
+/*cart page */
+
+.crtbox1{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: absolute;
+  top:100px;
+  left:100px;
+ 
+  height: 200px;
+  width: 600px;
+  background-color: #47004b;
+  border-radius: 15px;
+}
+.crtbox1:hover{
+  background-color: #630068;
+}
+.crtbox2:hover{
+  background-color: #630068;
+}
+.crtbox3:hover{
+  background-color: #630068;
+}
+
+.crtbox2{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: absolute;
+  top:310px;
+  left:100px;
+  
+  height: 200px;
+  width: 600px;
+  background-color: #47004b;
+  border-radius: 15px;
+}
+
+.crtbox3{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: absolute;
+  top:520px;
+  left:100px;
+  height: 200px;
+  width: 600px;
+  background-color: #47004b;
+  border-radius: 15px;
+}
+.crtbox4{
+  
+  position: absolute;
+  top:100px;
+  right:30px;
+  height:400px;
+  width:500px;
+  background-color: #47004b;
+  border-radius: 15px;
+
+}
+.cart_button_buyNOw{
+  position:absolute;
+  top:510px;
+  right:30px;
+  width:500px;
+  height: 100px;
+  border-radius: 15px;
+  border-style: none;
+  background-color: #910098;
+  font-family: Arial;
+  font-size: 20px;
+  color:#fff;
+
+}
+.cart_button_buyNOw:hover{
+  background-color: #880090;
+}
+.cart_button_buyNOw:active{
+  background-color: #4f0053;
+}
+.img1{
+  height: 180px;
+  width:180px;
+  margin-left: 10px;
+  background-image: url(nft9.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+.img2{
+  height: 180px;
+  width:180px;
+  margin-left: 10px;
+  background-image: url(nft1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+.img3{
+  height: 180px;
+  width:180px;
+  margin-left: 10px;
+  background-image: url(nft12.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.heading1{
+  margin-left: 10px;
+  height: 180px;
+  width: 370px;
+  
+  
+}
+.heading1 h1{
+  font-family: Arial;
+  font-size: 40px;
+  color:#fff;
+  
+}
+.heading1 p{
+  font-family: arial;
+  font-size: 18px;
+  color:#979090;
+  
+}
+.cart_text{
+  position: absolute;
+  top:130px;
+  right:130px;
+  height:100px;
+  width: 200px;
+  
+}
+.cart_text h1{
+  font-family: Arial;
+  font-size:65px;
+  color: #fff;
+}
+table {
+  margin-top: 200px;
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 0px solid black;
+  padding: 8px;
+  text-align: center;
+  font-family: arial;
+  color:#fff;
+  font-size: 20px;
+}
